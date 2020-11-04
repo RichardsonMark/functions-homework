@@ -44,24 +44,21 @@ class TestPythonFunctionPractice(unittest.TestCase):
       self.assertEqual( "January", result )
 
   def test_number_to_full_name__month_3(self):
-      result = number_to_full_month_name1( 3 )
+      result = number_to_full_month_name( 3 )
       self.assertEqual( "March", result )
 
   def test_number_to_full_name__month_9(self):
-      result = number_to_full_month_name2( 9 )
+      result = number_to_full_month_name( 9 )
       self.assertEqual( "September", result )
 
-  @unittest.skip("delete this line to run the test")
   def test_number_to_short_month_name__month_1(self):
       first_month_string = number_to_short_month_name( 1 )
       self.assertEqual( "Jan", first_month_string )
 
-  @unittest.skip("delete this line to run the test")
   def test_number_to_short_month_name__month_4(self):
       fourth_month_string = number_to_short_month_name( 4 )
       self.assertEqual( "Apr", fourth_month_string )
 
-  @unittest.skip("delete this line to run the test")
   def test_number_to_short_month_name__month_10(self):
       tenth_month_string = number_to_short_month_name( 10 )
       self.assertEqual( "Oct", tenth_month_string )
@@ -69,9 +66,10 @@ class TestPythonFunctionPractice(unittest.TestCase):
   #Further
 
   #Given the length of a side of a cube calculate the volume
-  @unittest.skip("delete this line to run the test")
   def test_volume_of_cube(self):
-    #add test code here
+    cubeVolume = volume_of_cube(50)
+    self.assertEqual( 125.0, cubeVolume )
+
     pass
 
   #Given a String, return the String reversed
