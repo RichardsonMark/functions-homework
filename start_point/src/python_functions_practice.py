@@ -42,6 +42,17 @@ def number_to_short_month_name(month10):
         return(calendar.month_abbr[month10])
 
 def volume_of_cube(width):
+    # work out vol and / 1000 (change from ml cubed to ml)
     volume = width * width * width
     volume = volume / 1000
     return(volume)
+
+def reverse_string(string_forward):
+    # Slice the string to reverse it
+    string_reversed = "test" [::-1]
+    return(string_reversed)
+
+def fahrenheit_to_celsius(tempF):
+    # convert to celsius
+    celsius = (tempF - 32) * 5/9
+    return(celsius)
